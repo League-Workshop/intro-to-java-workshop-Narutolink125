@@ -6,7 +6,7 @@ import org.jointheleague.graphical.robot.Robot;
 public class FourSquare {
 	
 	// 2. Create a new Robot
-
+	Robot bob = new Robot();
 	void go() {
 		// 4. Make the robot move as fast as possible
 
@@ -17,18 +17,23 @@ public class FourSquare {
 			// 7. Set the pen color to random
 	
 			// 1. Call the drawSquare() method
-	
+			drawSquare();
 			// 8. Turn the robot 90 degrees to the right
-
+		                                                                                                                    
 	}
 
 	
 	void drawSquare() {
-		JOptionPane.showMessageDialog(null, "yay! you called the drawSquare() method!");
+		JOptionPane.showMessageDialog(null, "Bob is to slow!");
 		/* 3. Fill in the code to draw a square inside the method below. */
-		
-		
-	}
+		bob.penDown();
+		for (int i = 0; i < 100; i++) {
+			bob.setSpeed(99999999);
+			bob.move(30);
+			bob.turn(123);
+
+		}	
+}
 
 	public static void main(String[] args) {
 		new FourSquare().go();
@@ -36,5 +41,8 @@ public class FourSquare {
 
 }
 
-
+                                                                                                                                                                             
+                                                                                                                                                                                                                                                                                                                                    
+                                                                                                                                                                             
+                                                                                                                                                                             
 
